@@ -1,0 +1,4 @@
+{
+  "pack": "python",
+  "test": "python -m venv /tmp/venv && . /tmp/venv/bin/activate && pip install -q -U pip && mkdir -p .meridian-reports && pip install -q -e . pytest pytest-benchmark pytest-run-parallel dirty-equals pytest-mock jsonschema pytz email-validator && python -m pytest -q tests/test_networks.py --junitxml=.meridian-reports/junit.xml"
+}
